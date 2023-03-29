@@ -20,14 +20,6 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("color", selectedColor);
   });
 
-  socket.on("message", (message) => {
-    io.emit("messageForReview", message);
-  });
-
-  socket.on("acceptMessage", (message) => {
-    io.emit("message", message);
-  });
-
   socket.on("refresh", () => {
     io.emit("refresh");
   });
@@ -39,10 +31,6 @@ app.get("/", (req, res) => {
 
 app.get("/display", (req, res) => {
   res.sendFile("display.html", { root: "./views" });
-});
-
-app.get("/admin", (req, res) => {
-  res.sendFile("admin.html", { root: "./views" });
 });
 
 server.listen(process.env.PORT || 80, () => {
