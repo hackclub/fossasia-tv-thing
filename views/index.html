@@ -9,11 +9,47 @@
       rel="stylesheet"
     />
     <style>
+      @font-face {
+        font-family: 'Phantom Sans';
+        src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+            format('woff'),
+          url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+            format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Phantom Sans';
+        src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+            format('woff'),
+          url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+            format('woff2');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Phantom Sans';
+        src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+            format('woff'),
+          url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+            format('woff2');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
       * {
-        font-family: "Space Grotesk", sans-serif;
+        font-family: "Phantom Sans", sans-serif;
       }
       body {
         background-color: black;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        margin-block-end: 0.2em;
+        margin-block-start: 1.2em;
       }
       .color {
         width: 50px;
@@ -24,6 +60,17 @@
     </style>
   </head>
   <body>
+    <h1>Hack Club @ FOSSASIA '23</h1>
+    <div>
+      <a 
+        href="https://hackclub.com/slack"
+        target="_blank"
+        style="font-size: 24px; color: #5bc0de!important"
+      >
+        Join our community!
+      </a>
+    </div>
+    <br />
     <div id="emojis"></div>
     <div
       style="
